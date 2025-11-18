@@ -16,7 +16,7 @@ LLM_TEMPERATURE = 0.3
 LLM_RESPONSE_FORMAT = {"type": "json_object"}
 
 # Database
-DB_PATH = "data/movie.json"
+DB_PATH = "/data/movie.json"
 
 # Budget thresholds
 BUDGET_MAX_PRICE = 60
