@@ -7,7 +7,15 @@ class DatabaseManager:
     """Manage movie database operations"""
     
     def __init__(self):
-        self.db_path = DB_PATH
+        # Determine correct base directory (project root)
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))  
+        ROOT_DIR = os.path.dirname(BASE_DIR)  # One level above 'database'
+
+        # Final robust path for movie.json
+        self.db_path = os.path.join(ROOT_DIR, "data", "movie.json")
+
+
+
         self.data = []
         self.metadata = {}
         self.load()

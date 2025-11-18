@@ -93,7 +93,7 @@ class LLMService:
             )
             
             result = json.loads(response.choices[0].message.content)
-            # print("Model response: ",response)
+            print("Model response: ",response)
             return result.get("response", "No shows found matching your criteria.")
         
         except Exception as e:
