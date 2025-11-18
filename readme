@@ -1,0 +1,39 @@
+movie-booking-api/
+├── main.py                      # FastAPI app entry point
+├── config.py                    # Configuration & constants
+├── requirements.txt             # Dependencies
+├── .env                        # Environment variables
+│
+├── data/
+│   └── movies.json             # Movie database
+│
+├── prompts/
+│   ├── __init__.py
+│   ├── system_prompts.py       # All LLM system prompts
+│   └── prompt_templates.py     # Reusable templates
+│
+├── database/
+│   ├── __init__.py
+│   └── db_manager.py           # Database operations
+│
+├── models/
+│   ├── __init__.py
+│   ├── requests.py             # Request models
+│   ├── responses.py            # Response models
+│   └── schemas.py              # Data schemas
+│
+├── services/
+│   ├── __init__.py
+│   ├── llm_service.py          # LLM interactions
+│   ├── search_service.py       # Database search
+│   ├── filter_service.py       # Filter detection
+│   └── formatter_service.py    # Response formatting
+│
+├── utils/
+│   ├── __init__.py
+│   ├── parsers.py              # Price & text parsing
+│   └── constants.py            # Static data
+│
+└── routes/
+    ├── __init__.py
+    └── booking_routes.py       # API endpoints
